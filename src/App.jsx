@@ -1,15 +1,28 @@
 
 
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
-import Navbar from './Navbar'
+import Main from './Components/Main'
+import Home from './Components/Home'
+
 
 function App() {
-  
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <Main></Main>,
+      children: [
+        {
+        path: '/',
+        element: <Home></Home>
+        }
+      ]
+    }
+  ])
 
   return (
     <div className="App">
-      <h1 className='text-5xl font-semibold'>New Project </h1>
-      
+      <RouterProvider router={router}></RouterProvider>
     </div>
   )
 }
