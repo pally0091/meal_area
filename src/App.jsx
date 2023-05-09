@@ -4,7 +4,8 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Main from './Components/Main'
 import Home from './Components/Home'
-import About from './Components/About'
+
+import Blogs from './Components/Blogs'
 
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
         element: <Home></Home>
         },
         {
-          path: '/about',
-          element: <About></About>
+          path: '/blogs',
+          element: <Blogs></Blogs>
         }
       ]
     }
