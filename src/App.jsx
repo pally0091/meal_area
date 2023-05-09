@@ -7,6 +7,7 @@ import Main from './Components/Main'
 
 import Blogs from './Components/Blogs'
 import Meals from './Components/Meals'
+import Detail from './Components/Detail'
 
 
 function App() {
@@ -28,6 +29,14 @@ function App() {
         {
           path: '/blogs',
           element: <Blogs></Blogs>
+        },
+        {
+          path: '/meal/:id',
+          element: <Detail></Detail>,
+          loader: ({ params }) =>
+            fetch(
+              `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`
+            )
         }
       ]
     }

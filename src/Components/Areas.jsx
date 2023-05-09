@@ -11,14 +11,14 @@ const Areas = () => {
     }, []);
     console.log(areas);
     return (
-        <div className='flex flex-col p-4 overflow-scroll h-[40%] overflow-x-hidden'>
+        <div className='flex flex-col p-4 overflow-scroll h-[80%] overflow-x-hidden sticky top-0'>
             {
                 areas?.map(area => (
                     <NavLink
                         
                         key={area?.strArea}
                         to={`/${area?.strArea}`}
-                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center focus:ring-white area-name '
+                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center area-name  hover:rom-green-300 hover:to-blue-400 transition duration-700'
                     >
                         
                     { area?.strArea}

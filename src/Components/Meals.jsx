@@ -9,11 +9,11 @@ const Meals = () => {
     console.log(meals)
     
     return (
-        <div className='flex flex-row'>
-            <div className='w-[15%] sticky top-0'>
+        <div className='flex flex-row  '>
+            <div className='lg:w-[15%] sm:w-[35%] min-[320px]:w-[35%] h-screen sticky top-0'>
                 <Areas></Areas>
             </div>
-            <div className='w-[85%] grid grid-cols-3 gap-4 p-5'>
+            <div className='lg:w-[85%] sm:w-[65%] min-[320px]:w-[65%] grid lg:grid-cols-3 sm:grid-cols-1 min-[320px]:grid-cols-1 gap-4 p-5'>
                 {
                     meals.map(meal => (<Meal
                         key={meal.strMeal}
