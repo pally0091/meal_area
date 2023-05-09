@@ -3,9 +3,10 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import './App.css'
 import Main from './Components/Main'
-import Home from './Components/Home'
+
 
 import Blogs from './Components/Blogs'
+import Meals from './Components/Meals'
 
 
 function App() {
@@ -16,8 +17,14 @@ function App() {
       children: [
         {
         path: '/',
-        element: <Home></Home>
+        element: <Meals></Meals>,
+          loader: () => fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Indian'),
         },
+        {
+          path: '/:id',
+          element: <Meals></Meals>,
+          loader: ({params}) => fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${params.id}`),
+          },
         {
           path: '/blogs',
           element: <Blogs></Blogs>
