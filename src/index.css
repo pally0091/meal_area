@@ -1,8 +1,4 @@
-body {
-  margin: 0;
-  font-family: 'Dosis', sans-serif;
-  background-color: greenyellow;
-}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,7 +6,9 @@ body {
 body {
   margin: 0;
   font-family: 'EB Garamond', serif;
-  background-color: greenyellow;
+  background-image: linear-gradient(to bottom right, #fc547e, #5bc05b, #7d7de7);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 a.active{
   border-bottom: 3px solid black;
