@@ -9,8 +9,8 @@ const Navbar = () => {
                 <p className='text-center text-lg' id='slogan'>Find meals where you at</p>
             </div> 
             <div className='mt-5'>
-                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl  ' to='/'>Home</NavLink>
-                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-500 dark:focus:ring-lime-800 shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl ' to='/blogs'>Blogs</NavLink>
+                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br  shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl  ' to='/'>Home</NavLink>
+                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br  shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl ' to='/blogs'>Blogs</NavLink>
             </div>
         </div>
     );

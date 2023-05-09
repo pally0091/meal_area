@@ -30,7 +30,7 @@ a.active{
 #slogan{
   white-space: nowrap;
   overflow: hidden;
-  animation: typing 2s steps(30, end) infinite;
+  animation: typing 3s steps(30, end) infinite;
 }
 @keyframes typing {
   from {
@@ -40,4 +40,8 @@ a.active{
   to {
     width: 100%
   }
+}
+.area-name.active{
+  border: 2px solid black;
+  animation: none;
 }

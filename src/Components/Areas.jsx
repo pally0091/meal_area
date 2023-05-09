@@ -15,9 +15,10 @@ const Areas = () => {
             {
                 areas?.map(area => (
                     <NavLink
+                        
                         key={area?.strArea}
                         to={`/${area?.strArea}`}
-                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center focus:ring-white '
+                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center focus:ring-white area-name '
                     >
                         
                     { area?.strArea}
