@@ -11,13 +11,13 @@ const Areas = () => {
     }, []);
     console.log(areas);
     return (
-        <div className='flex flex-col p-4 overflow-scroll h-screen scrollbar-track-red'>
+        <div className='flex flex-col p-4 overflow-scroll h-[40%] overflow-x-hidden'>
             {
                 areas?.map(area => (
                     <NavLink
                         key={area?.strArea}
                         to={`/${area?.strArea}`}
-                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 mx-auto w-[80%] my-2 p-2 rounded-e-full'
+                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center focus:ring-white '
                     >
                         
                     { area?.strArea}
