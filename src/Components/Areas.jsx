@@ -18,7 +18,7 @@ const Areas = () => {
                         
                         key={area?.strArea}
                         to={`/${area?.strArea}`}
-                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center area-name  hover:rom-green-300 hover:to-blue-400 transition duration-700'
+                        className='text-lg bg-gradient-to-r from-blue-400 to-green-300 my-1 p-2 rounded-e-full text-center area-name  hover:from-green-300 hover:to-blue-400 transition duration-700'
                     >
                         
                     { area?.strArea}
