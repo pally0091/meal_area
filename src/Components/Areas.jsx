@@ -9,7 +9,7 @@ const Areas = () => {
             .then(res => res.json())
             .then(data => setAreas(data?.meals))
     }, []);
-    console.log(areas);
+    // console.log(areas);
     return (
         <div className='flex flex-col p-4 overflow-scroll h-[80%] overflow-x-hidden sticky top-0'>
             {

@@ -6,7 +6,7 @@ import Meal from './Meal';
 const Meals = () => {
     const data = useLoaderData();
     const meals = data.meals;
-    console.log(meals)
+    // console.log(meals)
     
     return (
         <div className='flex flex-row  '>

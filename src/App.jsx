@@ -8,6 +8,7 @@ import Main from './Components/Main'
 import Blogs from './Components/Blogs'
 import Meals from './Components/Meals'
 import Detail from './Components/Detail'
+import Categories from './Components/Categories'
 
 
 function App() {
@@ -37,6 +38,11 @@ function App() {
             fetch(
               `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.id}`
             )
+        },
+        {
+          path: '/category/:id',
+          element: <Categories></Categories>,
+          loader: ({ params }) => fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${params.id}`)
         }
       ]
     }
