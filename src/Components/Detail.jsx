@@ -14,7 +14,7 @@ const Detail = () => {
                     <img className='w-full' src={detail.strMealThumb} alt="" />
                     <p>Type : { detail.strTags}</p>
                 </div>
-                <div className='w-1/2'>
+                <div className='w-1/2 p-2'>
                     <h4 className='text-right my-1 italic text-lg font-semibold'>Meal from <Link className='text-red-600 hover:text-white' to={`/${detail.strArea}`}>{detail.strArea}</Link> region</h4>
                     <h4 className='text-right my-1 italic text-lg font-semibold'>Meal Category : <Link className='bg-yellow-200 p-1 rounded-md hover:bg-white' to={`/category/${detail.strCategory}`}>{detail.strCategory}</Link></h4>
                     <a href={detail.strYoutube} target='_blank'>
@@ -22,7 +22,7 @@ const Detail = () => {
                     </a>
                 </div>
             </div>
-            <p className='p-4 text-justify bg-white opacity-60 rounded-lg my-2'>{detail.strInstructions}</p>
+            <p className='p-4 text-justify bg-white opacity-60 rounded-lg my-2 hover:opacity-100 transition duration-500'>{detail.strInstructions}</p>
             
         </div>
     );
