@@ -7,8 +7,12 @@ body {
   margin: 0;
   font-family: 'EB Garamond', serif;
   background-image: linear-gradient(to bottom right, #fc547e, #5bc05b, #7d7de7);
-  
+  text-decoration: none;
   height: fit-content;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
 }
 a.active{
   border-bottom: 3px solid black;
