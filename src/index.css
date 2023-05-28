@@ -17,7 +17,7 @@ a:hover{
 }
 a.active{
   border-bottom: 3px solid black;
-  animation: draw 2s linear forwards;
+  animation: draw 3s linear forwards;
 }
 @keyframes draw {
   from {
@@ -48,5 +48,5 @@ a.active{
 }
 .area-name.active{
   box-shadow: 0 0 0 4px greenyellow;
-  animation: none;
+  animation: draw 1s linear forwards;
 }
