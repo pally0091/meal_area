@@ -10,7 +10,7 @@ const Navbar = () => {
             </div> 
             <div className='mt-5'>
                 <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br  shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl  ' to='/'>Home</NavLink>
-                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br  shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl ' to='/blogs'>Blogs</NavLink>
+                <NavLink className='text-gray-900 bg-gradient-to-r from-rose-500 via-white to-violet-300 hover:bg-gradient-to-br  shadow-lg shadow-lime-500/50 dark:shadow-lg dark:shadow-lime-800/80 font-medium rounded-lg px-5 py-2.5 text-center m-3 text-xl ' to='/blogs'>Facts</NavLink>
             </div>
         </div>
     );
