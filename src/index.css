@@ -1,21 +1,19 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: 'EB Garamond', serif;
-  background-image: linear-gradient(to bottom right, #fc547e, #5bc05b, #7d7de7);
+  font-family: "EB Garamond", serif;
+  background-image: linear-gradient(to bottom right, #99a2ff, #79c6e4, #f6f7c8);
   text-decoration: none;
   height: fit-content;
 }
-a:hover{
+a:hover {
   text-decoration: none;
   color: black;
 }
-a.active{
+.head-link.active {
   border-bottom: 3px solid black;
   animation: draw 3s linear forwards;
 }
@@ -27,26 +25,26 @@ a.active{
   }
 
   to {
-    border-color: #000;
+    /* border-color: #000; */
     width: 100%;
     height: 100%;
   }
 }
-#slogan{
+#slogan {
   white-space: nowrap;
   overflow: hidden;
   animation: typing 3s steps(30, end) infinite;
 }
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 
   to {
-    width: 100%
+    width: 100%;
   }
 }
-.area-name.active{
-  box-shadow: 0 0 0 4px greenyellow;
-  animation: draw 1s linear forwards;
+.area-name.active {
+  border-bottom: 2px solid greenyellow;
+  /* animation: draw 0.5s linear forwards; */
 }
